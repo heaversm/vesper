@@ -1,0 +1,360 @@
+2018-04-30 15:10:58,919 INFO     Job started for command "import" with arguments:
+    {'importer': {'arguments': {'archive_data': {'annotation_constraints': [{'description': 'Coarse '
+                                                                                            'classifications '
+                                                                                            'only.',
+                                                                             'name': 'Coarse '
+                                                                                     'Classification',
+                                                                             'type': 'Values',
+                                                                             'values': ['Call',
+                                                                                        'Noise',
+                                                                                        'Tone']},
+                                                                            {'description': 'All '
+                                                                                            'classifications, '
+                                                                                            'including '
+                                                                                            'call '
+                                                                                            'subclassifications.',
+                                                                             'extends': 'Coarse '
+                                                                                        'Classification',
+                                                                             'name': 'Classification',
+                                                                             'type': 'Hierarchical '
+                                                                                     'Values',
+                                                                             'values': [{'Call': ['AMCO',
+                                                                                                  'AMPI',
+                                                                                                  'AMRE',
+                                                                                                  'AMRO',
+                                                                                                  'ATSP',
+                                                                                                  'BAIS',
+                                                                                                  'BHGR',
+                                                                                                  'CAWA',
+                                                                                                  'CCSP_BRSP',
+                                                                                                  'CHSP',
+                                                                                                  'COYE',
+                                                                                                  'DoubleUp',
+                                                                                                  'DEJU',
+                                                                                                  'GCKI',
+                                                                                                  'GRSP',
+                                                                                                  'GRYE',
+                                                                                                  'HETH',
+                                                                                                  'HOLA',
+                                                                                                  'LALO',
+                                                                                                  'LAZB',
+                                                                                                  'LBCU',
+                                                                                                  'LISP',
+                                                                                                  'MGWA',
+                                                                                                  'NOWA',
+                                                                                                  'OVEN',
+                                                                                                  'Other',
+                                                                                                  'PYNU_LBDO',
+                                                                                                  'Peep',
+                                                                                                  'SAVS',
+                                                                                                  'SORA',
+                                                                                                  'SOSP',
+                                                                                                  'SPSA_SOSA',
+                                                                                                  'SWTH',
+                                                                                                  'UPSA',
+                                                                                                  'Unknown',
+                                                                                                  'VEER',
+                                                                                                  'VESP',
+                                                                                                  'VIRA',
+                                                                                                  'WCSP',
+                                                                                                  'WEME',
+                                                                                                  'WETA',
+                                                                                                  'WIWA',
+                                                                                                  'WTSP',
+                                                                                                  'Weak',
+                                                                                                  'YRWA',
+                                                                                                  'Zeep']}]}],
+                                                 'annotations': [{'constraint': 'Classification',
+                                                                  'name': 'Classification',
+                                                                  'type': 'String'}],
+                                                 'classifiers': [{'description': 'Classifies '
+                                                                                 'a '
+                                                                                 'clip '
+                                                                                 'as '
+                                                                                 '"Outside" '
+                                                                                 'if '
+                                                                                 'and '
+                                                                                 'only '
+                                                                                 'if '
+                                                                                 'its '
+                                                                                 'start '
+                                                                                 'time '
+                                                                                 'is '
+                                                                                 'outside '
+                                                                                 'of '
+                                                                                 'the '
+                                                                                 'interval '
+                                                                                 'from '
+                                                                                 'one '
+                                                                                 'hour '
+                                                                                 'after '
+                                                                                 'sunset '
+                                                                                 'to '
+                                                                                 'one '
+                                                                                 'half '
+                                                                                 'hour '
+                                                                                 'before '
+                                                                                 'sunrise.\n',
+                                                                  'name': 'MPG '
+                                                                          'Ranch '
+                                                                          'Outside '
+                                                                          'Classifier '
+                                                                          '1.0'},
+                                                                 {'description': 'Classifies '
+                                                                                 'a '
+                                                                                 'clip '
+                                                                                 'as '
+                                                                                 '"Call" '
+                                                                                 'or '
+                                                                                 '"Noise" '
+                                                                                 'if '
+                                                                                 'and '
+                                                                                 'only '
+                                                                                 'if '
+                                                                                 'it '
+                                                                                 'is '
+                                                                                 'not '
+                                                                                 'yet '
+                                                                                 'classified. '
+                                                                                 'The '
+                                                                                 'classifier '
+                                                                                 'is '
+                                                                                 'an '
+                                                                                 'SVM '
+                                                                                 'trained '
+                                                                                 'on '
+                                                                                 'MPG '
+                                                                                 'Ranch '
+                                                                                 'clips '
+                                                                                 'from '
+                                                                                 '2012-2014. '
+                                                                                 'Different '
+                                                                                 'SVMs '
+                                                                                 'are '
+                                                                                 'used '
+                                                                                 'for '
+                                                                                 'clips '
+                                                                                 'detected '
+                                                                                 'by '
+                                                                                 'the '
+                                                                                 'Old '
+                                                                                 'Bird '
+                                                                                 'Tseep '
+                                                                                 'and '
+                                                                                 'Old '
+                                                                                 'Bird '
+                                                                                 'Thrush '
+                                                                                 'detectors.\n',
+                                                                  'name': 'MPG '
+                                                                          'Ranch '
+                                                                          'Coarse '
+                                                                          'Classifier '
+                                                                          '1.0'},
+                                                                 {'description': 'Classifies '
+                                                                                 'an '
+                                                                                 'unclassified '
+                                                                                 'clip '
+                                                                                 'as '
+                                                                                 'a '
+                                                                                 '"Call" '
+                                                                                 'if '
+                                                                                 'it '
+                                                                                 'appears '
+                                                                                 'to '
+                                                                                 'be '
+                                                                                 'a '
+                                                                                 'nocturnal '
+                                                                                 'flight '
+                                                                                 'call, '
+                                                                                 'or '
+                                                                                 'as '
+                                                                                 'a '
+                                                                                 '"Noise" '
+                                                                                 'otherwise. '
+                                                                                 'Does '
+                                                                                 'not '
+                                                                                 'classify '
+                                                                                 'a '
+                                                                                 'clip '
+                                                                                 'that '
+                                                                                 'has '
+                                                                                 'already '
+                                                                                 'been '
+                                                                                 'classified, '
+                                                                                 'whether '
+                                                                                 'manually '
+                                                                                 'or '
+                                                                                 'automatically.\n',
+                                                                  'name': 'MPG '
+                                                                          'Ranch '
+                                                                          'NFC '
+                                                                          'Coarse '
+                                                                          'Classifier '
+                                                                          '2.0'},
+                                                                 {'description': 'Classifies '
+                                                                                 'some '
+                                                                                 '"Call" '
+                                                                                 'clips '
+                                                                                 'to '
+                                                                                 'species '
+                                                                                 '(more '
+                                                                                 'documentation '
+                                                                                 'needed).\n',
+                                                                  'name': 'MPG '
+                                                                          'Ranch '
+                                                                          'Species '
+                                                                          'Classifier '
+                                                                          '1.0'}],
+                                                 'detectors': [{'description': 'http://oldbird.org/analysis.htm',
+                                                                'name': 'Old Bird '
+                                                                        'Thrush '
+                                                                        'Detector'},
+                                                               {'description': 'http://oldbird.org/analysis.htm',
+                                                                'name': 'Old Bird '
+                                                                        'Tseep '
+                                                                        'Detector'},
+                                                               {'description': 'Vesper '
+                                                                               'reimplementation '
+                                                                               'of '
+                                                                               'Old '
+                                                                               'Bird '
+                                                                               'Thrush '
+                                                                               'detector.',
+                                                                'name': 'Old Bird '
+                                                                        'Thrush '
+                                                                        'Detector '
+                                                                        'Redux '
+                                                                        '1.0'},
+                                                               {'description': 'Vesper '
+                                                                               'reimplementation '
+                                                                               'of '
+                                                                               'Old '
+                                                                               'Bird '
+                                                                               'Tseep '
+                                                                               'detector.',
+                                                                'name': 'Old Bird '
+                                                                        'Tseep '
+                                                                        'Detector '
+                                                                        'Redux '
+                                                                        '1.0'},
+                                                               {'description': 'Vesper '
+                                                                               'reimplementation '
+                                                                               'of '
+                                                                               'Old '
+                                                                               'Bird '
+                                                                               'Thrush '
+                                                                               'detector.',
+                                                                'name': 'Old Bird '
+                                                                        'Thrush '
+                                                                        'Detector '
+                                                                        'Redux '
+                                                                        '1.1'},
+                                                               {'description': 'Vesper '
+                                                                               'reimplementation '
+                                                                               'of '
+                                                                               'Old '
+                                                                               'Bird '
+                                                                               'Tseep '
+                                                                               'detector.',
+                                                                'name': 'Old Bird '
+                                                                        'Tseep '
+                                                                        'Detector '
+                                                                        'Redux '
+                                                                        '1.1'}],
+                                                 'device_models': [{'description': 'Personal '
+                                                                                   'computer '
+                                                                                   'as '
+                                                                                   'an '
+                                                                                   'audio '
+                                                                                   'recorder.',
+                                                                    'manufacturer': 'Various',
+                                                                    'model': 'PC',
+                                                                    'name': 'PC '
+                                                                            'Recorder',
+                                                                    'num_inputs': 2,
+                                                                    'type': 'Audio '
+                                                                            'Recorder'},
+                                                                   {'description': '',
+                                                                    'manufacturer': 'Old '
+                                                                                    'Bird',
+                                                                    'model': '21c',
+                                                                    'name': '21c',
+                                                                    'num_outputs': 1,
+                                                                    'type': 'Microphone'}],
+                                                 'devices': [{'description': 'Recorder '
+                                                                             'used '
+                                                                             'at '
+                                                                             'Forest '
+                                                                             'Grove '
+                                                                             'station.\n',
+                                                              'model': 'PC '
+                                                                       'Recorder',
+                                                              'name': 'PC Recorder '
+                                                                      '1',
+                                                              'serial_number': 1},
+                                                             {'description': 'Microphone '
+                                                                             'used '
+                                                                             'at '
+                                                                             'Forest '
+                                                                             'Grove '
+                                                                             'station.\n',
+                                                              'model': '21c',
+                                                              'name': '21c 1',
+                                                              'serial_number': 1}],
+                                                 'station_devices': [{'connections': [{'input': 'PC '
+                                                                                                'Recorder '
+                                                                                                '1 '
+                                                                                                'Input '
+                                                                                                '0',
+                                                                                       'output': '21c '
+                                                                                                 '1 '
+                                                                                                 'Output'}],
+                                                                      'devices': ['PC '
+                                                                                  'Recorder '
+                                                                                  '1',
+                                                                                  '21c '
+                                                                                  '1'],
+                                                                      'end_time': datetime.date(2019, 1, 1),
+                                                                      'start_time': datetime.date(2018, 1, 1),
+                                                                      'station': 'Forest '
+                                                                                 'Grove'}],
+                                                 'stations': [{'description': 'Station '
+                                                                              'in '
+                                                                              'Forest '
+                                                                              'Grove, '
+                                                                              'OR',
+                                                               'elevation': 65,
+                                                               'latitude': 45.519622,
+                                                               'longitude': -123.112039,
+                                                               'name': 'Forest '
+                                                                       'Grove',
+                                                               'time_zone': 'US/Pacific'}]}},
+                  'name': 'Archive Data Importer'}}
+2018-04-30 15:10:58,920 INFO     Adding station "Forest Grove"...
+2018-04-30 15:10:58,982 INFO     Adding device model "PC Recorder"...
+2018-04-30 15:10:58,984 INFO     Adding device model "PC Recorder" input "Input 0"...
+2018-04-30 15:10:58,986 INFO     Adding device model "PC Recorder" input "Input 1"...
+2018-04-30 15:10:58,987 INFO     Adding device model "21c"...
+2018-04-30 15:10:58,989 INFO     Adding device model "21c" output "Output"...
+2018-04-30 15:10:58,992 INFO     Adding device "PC Recorder 1"...
+2018-04-30 15:10:58,996 INFO     Adding device "PC Recorder 1" input "Input 0"...
+2018-04-30 15:10:58,997 INFO     Adding device "PC Recorder 1" input "Input 1"...
+2018-04-30 15:10:58,999 INFO     Adding device "21c 1"...
+2018-04-30 15:10:59,002 INFO     Adding device "21c 1" output "Output"...
+2018-04-30 15:10:59,012 INFO     Adding station "Forest Grove" device "PC Recorder 1" from 2018-01-01 08:00:00+00:00 to 2019-01-01 08:00:00+00:00"...
+2018-04-30 15:10:59,014 INFO     Adding station "Forest Grove" device "21c 1" from 2018-01-01 08:00:00+00:00 to 2019-01-01 08:00:00+00:00"...
+2018-04-30 15:10:59,020 INFO     Adding station "Forest Grove" device connection "21c 1 Output -> PC Recorder 1 Input 0 from 2018-01-01 08:00:00+00:00 to 2019-01-01 08:00:00+00:00"...
+2018-04-30 15:10:59,022 INFO     Adding detector "Old Bird Thrush Detector"...
+2018-04-30 15:10:59,024 INFO     Adding detector "Old Bird Tseep Detector"...
+2018-04-30 15:10:59,025 INFO     Adding detector "Old Bird Thrush Detector Redux 1.0"...
+2018-04-30 15:10:59,026 INFO     Adding detector "Old Bird Tseep Detector Redux 1.0"...
+2018-04-30 15:10:59,027 INFO     Adding detector "Old Bird Thrush Detector Redux 1.1"...
+2018-04-30 15:10:59,029 INFO     Adding detector "Old Bird Tseep Detector Redux 1.1"...
+2018-04-30 15:10:59,030 INFO     Adding classifier "MPG Ranch Outside Classifier 1.0"...
+2018-04-30 15:10:59,031 INFO     Adding classifier "MPG Ranch Coarse Classifier 1.0"...
+2018-04-30 15:10:59,032 INFO     Adding classifier "MPG Ranch NFC Coarse Classifier 2.0"...
+2018-04-30 15:10:59,033 INFO     Adding classifier "MPG Ranch Species Classifier 1.0"...
+2018-04-30 15:10:59,034 INFO     Adding annotation constraint "Coarse Classification"...
+2018-04-30 15:10:59,038 INFO     Adding annotation constraint "Classification"...
+2018-04-30 15:10:59,043 INFO     Adding annotation "Classification"...
+2018-04-30 15:10:59,052 INFO     Job complete.

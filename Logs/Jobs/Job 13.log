@@ -1,0 +1,13 @@
+2018-05-01 14:06:36,742 INFO     Job started for command "classify" with arguments:
+    {'annotation_name': 'Classification',
+     'classifier': 'MPG Ranch NFC Coarse Classifier 2.0',
+     'detectors': ['Old Bird Thrush Detector Redux 1.1',
+                   'Old Bird Tseep Detector Redux 1.1'],
+     'end_date': datetime.date(2018, 4, 22),
+     'start_date': datetime.date(2018, 4, 22),
+     'station_mics': ['Forest Grove / 21c 1']}
+2018-05-01 14:06:39,649 INFO     Classifier will visit 319 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-22.
+2018-05-01 14:06:41,996 INFO     Classified 319 of 319 visited clips in 2.3 seconds, an average of 138.7 clips per second.
+2018-05-01 14:06:41,999 INFO     Classifier will visit 390 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-22.
+2018-05-01 14:06:44,737 INFO     Classified 390 of 390 visited clips in 2.7 seconds, an average of 144.4 clips per second.
+2018-05-01 14:06:44,740 INFO     Job complete.

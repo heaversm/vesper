@@ -1,0 +1,32 @@
+2018-05-01 14:45:20,008 INFO     Job started for command "delete_clips" with arguments:
+    {'classification': 'Noise',
+     'detectors': ['Old Bird Thrush Detector Redux 1.1',
+                   'Old Bird Tseep Detector Redux 1.1'],
+     'end_date': datetime.date(2018, 4, 29),
+     'retain_count': 0,
+     'start_date': datetime.date(2018, 4, 19),
+     'station_mics': ['Forest Grove / 21c 1']}
+2018-05-01 14:45:20,026 INFO     Deleted 0 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-19.
+2018-05-01 14:45:21,006 INFO     Deleted 167 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-20.
+2018-05-01 14:45:21,010 INFO     Deleted 0 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-21.
+2018-05-01 14:45:21,972 INFO     Deleted 197 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-22.
+2018-05-01 14:45:21,976 INFO     Deleted 0 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-23.
+2018-05-01 14:45:22,336 INFO     Deleted 79 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-24.
+2018-05-01 14:45:22,422 INFO     Deleted 13 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-25.
+2018-05-01 14:45:24,231 INFO     Deleted 368 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-26.
+2018-05-01 14:45:24,259 INFO     Deleted 5 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-27.
+2018-05-01 14:45:33,018 INFO     Deleted 1872 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-28.
+2018-05-01 14:45:33,022 INFO     Deleted 0 clips for detector "Old Bird Thrush Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-29.
+2018-05-01 14:45:33,026 INFO     Deleted 0 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-19.
+2018-05-01 14:45:33,088 INFO     Deleted 13 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-20.
+2018-05-01 14:45:33,091 INFO     Deleted 0 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-21.
+2018-05-01 14:45:34,972 INFO     Deleted 384 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-22.
+2018-05-01 14:45:34,976 INFO     Deleted 0 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-23.
+2018-05-01 14:45:35,271 INFO     Deleted 54 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-24.
+2018-05-01 14:45:36,393 INFO     Deleted 243 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-25.
+2018-05-01 14:45:39,053 INFO     Deleted 562 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-26.
+2018-05-01 14:45:39,924 INFO     Deleted 163 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-27.
+2018-05-01 14:45:40,595 INFO     Deleted 134 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-28.
+2018-05-01 14:45:40,598 INFO     Deleted 0 clips for detector "Old Bird Tseep Detector Redux 1.1", station "Forest Grove", mic output "21c 1 Output", and date 2018-04-29.
+2018-05-01 14:45:40,598 INFO     Deleted a total of 4254 clips in 20.6 seconds, an average of 206.5 clips per second.
+2018-05-01 14:45:40,601 INFO     Job complete.

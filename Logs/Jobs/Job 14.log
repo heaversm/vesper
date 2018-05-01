@@ -1,0 +1,7 @@
+2018-05-01 14:12:14,301 INFO     Job started for command "detect" with arguments:
+    {'detectors': ['Old Bird Thrush Detector Redux 1.1',
+                   'Old Bird Tseep Detector Redux 1.1'],
+     'end_date': datetime.date(2018, 4, 23),
+     'start_date': datetime.date(2018, 4, 23),
+     'stations': ['Forest Grove']}
+2018-05-01 14:12:14,311 INFO     Job complete.

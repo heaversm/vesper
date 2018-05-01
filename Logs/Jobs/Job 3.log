@@ -1,0 +1,16 @@
+2018-04-30 15:11:42,275 INFO     Job started for command "import" with arguments:
+    {'importer': {'arguments': {'paths': ['/Users/Harold/Desktop/Test '
+                                          'Archive/Recordings'],
+                                'recording_file_parser': {'arguments': {'station_name_aliases_preset': 'Station '
+                                                                                                       'Name '
+                                                                                                       'Aliases'},
+                                                          'name': 'MPG Ranch '
+                                                                  'Recording File '
+                                                                  'Parser'},
+                                'recursive': False},
+                  'name': 'Recording Importer'}}
+2018-04-30 15:11:42,299 INFO     Found 1 new recording and 0 old recordings at the specified paths.
+2018-04-30 15:11:42,299 INFO     The new recordings will be imported.
+2018-04-30 15:11:42,305 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-26 11:29:47+00:00 / duration 1.104 h with files:
+2018-04-30 15:11:42,305 INFO         /Users/Harold/Desktop/Test Archive/Recordings/Forest Grove_2018-04-26_11.29.47_Z.wav
+2018-04-30 15:11:42,309 INFO     Job complete.

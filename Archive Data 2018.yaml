@@ -1,0 +1,165 @@
+stations:
+
+    - name: Forest Grove
+      description: Station in Forest Grove, OR
+      time_zone: US/Pacific
+      latitude: 45.519622
+      longitude: -123.112039
+      elevation: 65
+
+device_models:
+
+    - name: PC Recorder
+      type: Audio Recorder
+      manufacturer: Various
+      model: PC
+      description: Personal computer as an audio recorder.
+      num_inputs: 2
+
+    - name: 21c
+      type: Microphone
+      manufacturer: Old Bird
+      model: 21c
+      description: ""
+      num_outputs: 1
+
+devices:
+
+    - name: PC Recorder 1
+      model: PC Recorder
+      serial_number: 1
+      description: >
+          Recorder used at Forest Grove station.
+
+    - name: 21c 1
+      model: 21c
+      serial_number: 1
+      description: >
+          Microphone used at Forest Grove station.
+
+station_devices:
+
+    - station: Forest Grove
+      start_time: 2018-01-01
+      end_time: 2019-01-01
+      devices:
+          - PC Recorder 1
+          - 21c 1
+      connections:
+          - output: 21c 1 Output
+            input: PC Recorder 1 Input 0
+
+detectors:
+
+    - name: Old Bird Thrush Detector
+      description: http://oldbird.org/analysis.htm
+
+    - name: Old Bird Tseep Detector
+      description: http://oldbird.org/analysis.htm
+
+    - name: Old Bird Thrush Detector Redux 1.0
+      description: Vesper reimplementation of Old Bird Thrush detector.
+
+    - name: Old Bird Tseep Detector Redux 1.0
+      description: Vesper reimplementation of Old Bird Tseep detector.
+
+    - name: Old Bird Thrush Detector Redux 1.1
+      description: Vesper reimplementation of Old Bird Thrush detector.
+
+    - name: Old Bird Tseep Detector Redux 1.1
+      description: Vesper reimplementation of Old Bird Tseep detector.
+
+classifiers:
+
+    - name: MPG Ranch Outside Classifier 1.0
+      description: >
+          Classifies a clip as "Outside" if and only if its start time is
+          outside of the interval from one hour after sunset to one half
+          hour before sunrise.
+
+    - name: MPG Ranch Coarse Classifier 1.0
+      description: >
+          Classifies a clip as "Call" or "Noise" if and only if it is not
+          yet classified. The classifier is an SVM trained on MPG Ranch
+          clips from 2012-2014. Different SVMs are used for clips detected
+          by the Old Bird Tseep and Old Bird Thrush detectors.
+
+    - name: MPG Ranch NFC Coarse Classifier 2.0
+      description: >
+          Classifies an unclassified clip as a "Call" if it appears to be
+          a nocturnal flight call, or as a "Noise" otherwise. Does not
+          classify a clip that has already been classified, whether
+          manually or automatically.
+
+    - name: MPG Ranch Species Classifier 1.0
+      description: >
+          Classifies some "Call" clips to species (more documentation needed).
+
+annotation_constraints:
+
+    - name: Coarse Classification
+      description: Coarse classifications only.
+      type: Values
+      values:
+          - Call
+          - Noise
+          - Tone
+
+    - name: Classification
+      description: All classifications, including call subclassifications.
+      type: Hierarchical Values
+      extends: Coarse Classification
+      values:
+          - Call:
+              - AMCO
+              - AMPI
+              - AMRE
+              - AMRO
+              - ATSP
+              - BAIS
+              - BHGR
+              - CAWA
+              - CCSP_BRSP
+              - CHSP
+              - COYE
+              - DoubleUp
+              - DEJU
+              - GCKI
+              - GRSP
+              - GRYE
+              - HETH
+              - HOLA
+              - LALO
+              - LAZB
+              - LBCU
+              - LISP
+              - MGWA
+              - NOWA
+              - OVEN
+              - Other
+              - PYNU_LBDO
+              - Peep
+              - SAVS
+              - SORA
+              - SOSP
+              - SPSA_SOSA
+              - SWTH
+              - UPSA
+              - Unknown
+              - VEER
+              - VESP
+              - VIRA
+              - WCSP
+              - WEME
+              - WETA
+              - WIWA
+              - WTSP
+              - Weak
+              - YRWA
+              - Zeep
+
+annotations:
+
+    - name: Classification
+      type: String
+      constraint: Classification

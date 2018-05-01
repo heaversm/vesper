@@ -1,0 +1,34 @@
+globals:
+    annotation_name: Classification
+    annotation_scope: Selection
+
+commands:
+
+    ">": [show_next_page]
+    "<": [show_previous_page]
+    ".": [select_next_clip]
+    ",": [select_previous_clip]
+    "/": [play_selected_clip]
+    "~": [toggle_clip_labels]
+
+    "#": [set_local, annotation_scope, Page]
+    "\\": [clear_command_and_locals]
+
+    n: [annotate_clips, Noise]
+    N: [annotate_page_clips, Noise]
+    "*N": [annotate_all_clips, Noise]
+    o: [annotate_clips, Outside]
+    O: [annotate_page_clips, Outside]
+    "*O": [annotate_all_clips, Outside]
+    u: [annotate_clips, Unknown]
+    U: [annotate_page_clips, Unknown]
+    c: [annotate_clips, Call]
+    C: [annotate_page_clips, Call]
+    x: [unannotate_clips]
+    X: [unannotate_page_clips]
+    "*X": [unannotate_all_clips]
+    b: [annotate_clips, Tone]
+    z: [annotate_clips, Other]
+    e: [annotate_clips, Tseep]
+    h: [annotate_clips, Thrush]
+    j: [annotate_clips, CHSP_DEJU]

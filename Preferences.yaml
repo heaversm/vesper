@@ -1,0 +1,84 @@
+default_presets:
+    Clip Album Settings: Resizing Clips, Labels Bottom
+    Clip Album Commands: Coarse
+
+calendar_defaults:
+    station_mic: Forest Grove / 21c 1
+    detector: Old Bird Tseep Detector Redux 1.1
+    classification: "Call*"
+
+import_recordings_defaults:
+    paths:
+        - '/Users/Harold/Desktop/NFC/Data/Test Archive/Recordings'
+    recursive: false
+
+export_clip_counts_csv_file_defaults:
+    detector: Old Bird Tseep Detector Redux 1.1
+    station_mic: Forest Grove / 21c 1
+
+hidden_processors:
+    - name: Old Bird Thrush Detector
+      type: Detector
+    - name: Old Bird Thrush Detector Redux 1.0
+      type: Detector
+    - name: Old Bird Tseep Detector
+      type: Detector
+    - name: Old Bird Tseep Detector Redux 1.0
+      type: Detector
+    - name: MPG Ranch Coarse Classifier 1.0
+      type: Classifier
+    - name: MPG Ranch Outside Classifier 1.0
+      type: Classifier
+
+navbar:
+
+    - name: View
+      dropdown:
+
+          - name: Clip Calendar
+            url_name: clip-calendar
+
+          - name: Clip Album
+            url_name: clip-album
+
+    - name: Import
+      dropdown:
+
+          - name: Archive Data
+            url_name: import-archive-data
+
+          - name: Recordings
+            url_name: import-recordings
+
+          - name: Old Bird Clips
+            url_name: import-old-bird-clips
+
+    - name: Detect
+      url_name: detect
+
+    - name: Classify
+      url_name: classify
+
+    - name: Export
+      dropdown:
+
+          - name: Clip Counts CSV File
+            url_name: export-clip-counts-csv-file
+
+          - name: Clips CSV File
+            url_name: export-clips-csv-file
+
+          - name: Clip Sound Files
+            url_name: export-clip-sound-files
+
+          - name: Clips HDF5 File
+            url_name: export-clips-hdf5-file
+
+    - name: Other
+      dropdown:
+
+          - name: Delete Recordings
+            url_name: delete-recordings
+
+          - name: Delete Clips
+            url_name: delete-clips

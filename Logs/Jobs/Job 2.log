@@ -1,0 +1,47 @@
+2018-04-30 15:11:20,349 INFO     Job started for command "import" with arguments:
+    {'importer': {'arguments': {'paths': ['/Users/Harold/Desktop/Test '
+                                          'Archive/Recordings'],
+                                'recording_file_parser': {'arguments': {'station_name_aliases_preset': 'Station '
+                                                                                                       'Name '
+                                                                                                       'Aliases'},
+                                                          'name': 'MPG Ranch '
+                                                                  'Recording File '
+                                                                  'Parser'},
+                                'recursive': False},
+                  'name': 'Recording Importer'}}
+2018-04-30 15:11:20,354 ERROR    Recording import failed with an exception.
+The exception message was:
+    Error parsing recording file "/Users/Harold/Desktop/Test Archive/Recordings/Forest Grove_2018-04-26_11.29.47.wav": Could not parse file name.
+The archive was not modified.
+See below for exception traceback.
+2018-04-30 15:11:20,361 ERROR    Job raised exception. See traceback below.
+Traceback (most recent call last):
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 124, in _get_recording_file
+    f = self.file_parser.parse_file(file_path)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/mpg_ranch/recording_file_parser.py", line 525, in parse_file
+    self._parse_file_name(file_path)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/mpg_ranch/recording_file_parser.py", line 554, in _parse_file_name
+    raise ValueError('Could not parse file name.')
+ValueError: Could not parse file name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/job_runner.py", line 123, in run_job
+    complete = command.execute(info)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/import_command.py", line 22, in execute
+    return self._importer.execute(context)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 55, in execute
+    recordings = self._get_recordings()
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 82, in _get_recordings
+    self._get_path_recording_files(path) for path in self.paths))
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 82, in <genexpr>
+    self._get_path_recording_files(path) for path in self.paths))
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 89, in _get_path_recording_files
+    return self._get_dir_recording_files(path)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 104, in _get_dir_recording_files
+    file = self._get_recording_file(file_path)
+  File "/Users/harold/miniconda3/envs/vesper-0.3.14/lib/python3.6/site-packages/vesper/command/recording_importer.py", line 129, in _get_recording_file
+    file_path, str(e)))
+vesper.command.command.CommandExecutionError: Error parsing recording file "/Users/Harold/Desktop/Test Archive/Recordings/Forest Grove_2018-04-26_11.29.47.wav": Could not parse file name.
+

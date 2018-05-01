@@ -1,0 +1,38 @@
+layout_type: Nonuniform Resizing Clip Views
+
+layout:
+
+    page:
+        width: 2.5              # seconds
+        height: 8               # rows
+
+    clip_view:
+        x_spacing: 1            # percent of display width
+        y_spacing: 2            # percent of display width
+
+clip_view_type: Spectrogram
+
+clip_view:
+
+    selection_outline:
+        color: orange
+        width: 5
+
+    label:
+        visible: true
+        location: Below
+        color: black
+        font_size: 1
+        classification_included: true
+        start_time_included: true
+        hidden_classification_prefixes: [Call.]
+
+    spectrogram:
+        window_size: 100
+        hop_size: 50
+        dft_size: 256
+        reference_power: 1e-9
+        low_power: 10
+        high_power: 100
+        smoothing_enabled: true
+        time_padding_enabled: false

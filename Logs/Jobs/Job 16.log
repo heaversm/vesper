@@ -1,0 +1,21 @@
+2018-05-01 14:13:34,609 INFO     Job started for command "detect" with arguments:
+    {'detectors': ['Old Bird Thrush Detector Redux 1.1',
+                   'Old Bird Tseep Detector Redux 1.1'],
+     'end_date': datetime.date(2018, 4, 25),
+     'start_date': datetime.date(2018, 4, 25),
+     'stations': ['Forest Grove']}
+2018-05-01 14:13:34,619 INFO     Running the following detectors on file "/Users/Harold/Desktop/Test Archive/Recordings/Forest Grove_2018-04-26_11.29.47_Z.wav"...
+2018-05-01 14:13:34,619 INFO         Old Bird Thrush Detector Redux 1.1
+2018-05-01 14:13:34,619 INFO         Old Bird Tseep Detector Redux 1.1
+2018-05-01 14:13:34,625 ERROR    Job raised exception. See traceback below.
+Traceback (most recent call last):
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/job_runner.py", line 123, in run_job
+    complete = command.execute(info)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 53, in execute
+    self._run_other_detectors(other_detectors, recordings)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 172, in _run_other_detectors
+    file_reader = WaveAudioFileReader(file_.path)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/signal/wave_audio_file.py", line 83, in __init__
+    raise ValueError('File "{}" does not exist.'.format(file_path))
+ValueError: File "/Users/Harold/Desktop/Test Archive/Recordings/Forest Grove_2018-04-26_11.29.47_Z.wav" does not exist.
+

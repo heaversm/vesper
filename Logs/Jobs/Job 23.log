@@ -1,0 +1,35 @@
+2018-05-01 14:31:35,905 INFO     Job started for command "detect" with arguments:
+    {'detectors': ['Old Bird Thrush Detector Redux 1.1',
+                   'Old Bird Tseep Detector Redux 1.1'],
+     'end_date': datetime.date(2018, 4, 19),
+     'start_date': datetime.date(2018, 4, 19),
+     'stations': ['Forest Grove']}
+2018-05-01 14:31:35,916 INFO     Running the following detectors on file "Recordings/Forest Grove_2018-04-19_21.21.38_Z.wav"...
+2018-05-01 14:31:35,916 INFO         Old Bird Thrush Detector Redux 1.1
+2018-05-01 14:31:35,916 INFO         Old Bird Tseep Detector Redux 1.1
+2018-05-01 14:31:36,149 ERROR    Job raised exception. See traceback below.
+Traceback (most recent call last):
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/job_runner.py", line 123, in run_job
+    complete = command.execute(info)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 53, in execute
+    self._run_other_detectors(other_detectors, recordings)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 176, in _run_other_detectors
+    file_.start_index)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 237, in _create_detectors
+    detector = _create_detector(detector_model, recording, listener)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/command/detect_command.py", line 397, in _create_detector
+    return cls(recording.sample_rate, listener)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/old_bird/old_bird_detector_redux_1_1.py", line 768, in __init__
+    super().__init__(_TSEEP_SETTINGS, sample_rate, listener)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/old_bird/old_bird_detector_redux_1_1.py", line 144, in __init__
+    self._signal_processor = self._create_signal_processor()
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/old_bird/old_bird_detector_redux_1_1.py", line 157, in _create_signal_processor
+    coefficients = self._design_filter()
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/old_bird/old_bird_detector_redux_1_1.py", line 203, in _design_filter
+    return _firls(filter_length, bands, desired)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/vesper/old_bird/old_bird_detector_redux_1_1.py", line 795, in _firls
+    return signal.firls(numtaps, bands, desired)
+  File "/Users/mikeheavers/anaconda3/envs/vesper/lib/python3.6/site-packages/scipy/signal/fir_filter_design.py", line 885, in firls
+    raise ValueError("bands must be monotonically nondecreasing and have "
+ValueError: bands must be monotonically nondecreasing and have width > 0.
+

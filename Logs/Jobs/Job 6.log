@@ -1,0 +1,39 @@
+2018-05-01 13:46:14,000 INFO     Job started for command "import" with arguments:
+    {'importer': {'arguments': {'paths': ['Recordings'],
+                                'recording_file_parser': {'arguments': {'station_name_aliases_preset': 'Station '
+                                                                                                       'Name '
+                                                                                                       'Aliases'},
+                                                          'name': 'MPG Ranch '
+                                                                  'Recording File '
+                                                                  'Parser'},
+                                'recursive': False},
+                  'name': 'Recording Importer'}}
+2018-05-01 13:46:14,146 INFO     Found 13 new recordings and 0 old recordings at the specified paths.
+2018-05-01 13:46:14,146 INFO     The new recordings will be imported.
+2018-05-01 13:46:14,161 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-19 21:21:38+00:00 / duration 0.011 h with files:
+2018-05-01 13:46:14,161 INFO         Recordings/Forest Grove_2018-04-19_21.21.38_Z.wav
+2018-05-01 13:46:14,161 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-19 05:51:21+00:00 / duration 3.333 h with files:
+2018-05-01 13:46:14,161 INFO         Recordings/Forest Grove_2018-04-19_05.51.21_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-19 06:23:07+00:00 / duration 0.386 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-19_06.23.07_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-20 10:32:58+00:00 / duration 3.333 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-20_10.32.58_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-21 11:51:28+00:00 / duration 0.691 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-21_11.51.28_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-23 04:56:18+00:00 / duration 1.667 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-23_04.56.18_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-23 12:01:16+00:00 / duration 0.948 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-23_12.01.16_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-25 09:24:06+00:00 / duration 1.667 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-25_09.24.06_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-27 12:19:06+00:00 / duration 0.544 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-27_12.19.06_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-27 06:57:57+00:00 / duration 3.333 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-27_06.57.57_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-28 12:06:07+00:00 / duration 0.623 h with files:
+2018-05-01 13:46:14,162 INFO         Recordings/Forest Grove_2018-04-28_12.06.07_Z.wav
+2018-05-01 13:46:14,162 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-29 05:34:27+00:00 / duration 3.333 h with files:
+2018-05-01 13:46:14,163 INFO         Recordings/Forest Grove_2018-04-29_05.34.27_Z.wav
+2018-05-01 13:46:14,163 INFO     Imported recording Forest Grove / PC Recorder 1 / start 2018-04-29 07:40:31+00:00 / duration 3.333 h with files:
+2018-05-01 13:46:14,163 INFO         Recordings/Forest Grove_2018-04-29_07.40.31_Z.wav
+2018-05-01 13:46:14,169 INFO     Job complete.
