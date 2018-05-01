@@ -14,6 +14,8 @@
 
 ## INSTALLING VESPER
 
+A video walkthrough of the below process is available on youtube here: [https://youtu.be/kQOG96KxLP8](https://youtu.be/kQOG96KxLP8)
+
 * Install [conda](https://conda.io/docs/user-guide/install/macos.html) or [Anaconda Navigator](https://www.anaconda.com/download/#macos) version 3.6 or greater.
 * In Anaconda Navigator, go to `environments > create > vesper (Python 3.6)`
 * Click the green arrow on Vesper, and choose `Open Terminal`
